@@ -6,8 +6,8 @@ from datetime import datetime
 from fabric.api import *
 
 
+env.hosts = ['34.138.245.164', '54.224.201.40']
 
-env.hosts = ['34.224.15.155', '	100.25.165.235']
 
 def do_pack():
     """Creates archive from web_static directory"""
