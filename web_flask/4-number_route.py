@@ -24,11 +24,13 @@ def cisfun(text):
     """display “C ” followed by the value of the text variable"""
     return 'C ' + text.replace('_', ' ')
 
+
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def pyisfun(text="is cool"):
     """display “py ” followed by the value of the text variable"""
     return 'Python ' + text.replace('_', ' ')
+
 
 @app.route('/number/<int:n>', strict_slashes=False)
 def isnumber(n):
